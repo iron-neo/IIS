@@ -1,0 +1,2 @@
+/// Как перевести PEM-файл от LetsEncrypt в PFX для IIS
+openssl pkcs12 -export -out new_pfx_cert.pfx -inkey privkey.pem -in cert.pem -certfile chain.pem
